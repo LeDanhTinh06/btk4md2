@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Boxes with Media Queries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+
+    .color-box {
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+      border: 2px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .color-box img {
+      width: 100%;
+      max-height: none;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    @media screen and (min-width: 772px) {
+      .color-box {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 2%;
+      }
+
+      .color-box img {
+        max-height: 30vh;
+      }
+    }
+
+    
+    @media screen and (min-width: 998px) {
+      .color-box {
+        width: 30%;
+        margin: 1.5%;
+      }
+
+      .color-box img {
+        max-height: 30vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="color-box" style="background-color:red;">
+    <h2>Red</h2>
+    <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=Red" alt="Red">
+  </div>
+
+  <div class="color-box" style="background-color:orange;">
+    <h2>Orange</h2>
+    <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=Orange" alt="Orange">
+  </div>
+
+  <div class="color-box" style="background-color:yellow;">
+    <h2>Yellow</h2>
+    <img src="https://via.placeholder.com/150/FFFF00/000000?text=Yellow" alt="Yellow">
+  </div>
+
+  <div class="color-box" style="background-color:green;">
+    <h2>Green</h2>
+    <img src="https://via.placeholder.com/150/008000/FFFFFF?text=Green" alt="Green">
+  </div>
+
+  <div class="color-box" style="background-color:blue;">
+    <h2>Blue</h2>
+    <img src="https://via.placeholder.com/150/0000FF/FFFFFF?text=Blue" alt="Blue">
+  </div>
+
+  <div class="color-box" style="background-color:indigo;">
+    <h2>Indigo</h2>
+    <img src="https://via.placeholder.com/150/4B0082/FFFFFF?text=Indigo" alt="Indigo">
+  </div>
+
+  <div class="color-box" style="background-color:purple;">
+    <h2>Purple</h2>
+    <img src="https://via.placeholder.com/150/800080/FFFFFF?text=Purple" alt="Purple">
+  </div>
+
+  <div class="color-box" style="background-color:pink;">
+    <h2>Pink</h2>
+    <img src="https://via.placeholder.com/150/FFC0CB/000000?text=Pink" alt="Pink">
+  </div>
+
+  <div class="color-box" style="background-color:white;">
+    <h2>White</h2>
+    <img src="https://via.placeholder.com/150/FFFFFF/000000?text=White" alt="White">
+  </div>
+
+</body>
+</html>
